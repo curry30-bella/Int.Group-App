@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_realtime_database"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/dataAddLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:shrinkColumns="2">
+
+                <TextView
+                    android:layout_margin="20dp"
+                    android:background="@color/purple_200"
+                    android:text="Please log in here! Go back first when change the account!"></TextView>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black_shade_1">
+
+                    <!--image view for our course-->
+                    <ImageView
+                        android:id="@+id/idIVCourseCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:scaleType="centerCrop" />
+
+                    <!--text view for course name-->
+                    <TextView
+                        android:id="@+id/idTVCOurseNameCard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idIVCourseCard"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_toStartOf="@id/idTVCousePriceCard"
+                        android:layout_toLeftOf="@id/idTVCousePriceCard"
+                        android:padding="4dp"
+                        android:text="Course Name"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <!--text view for course price-->
+                    <TextView
+                        android:id="@+id/idTVCousePriceCard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/idIVCourseCard"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginStart="3dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginEnd="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="Price"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TableLayout
+                android:id="@+id/tableLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:gravity="center"
+                    android:text="Chat in this Group"
+                    android:textAllCaps="true"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_height="0dp"
+                    android:background="#F3C6B8" />
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:shrinkColumns="2">
+
+
+                <TableRow android:layout_width="match_parent">
+
+                    <EditText
+                        android:id="@+id/sendContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="3" />
+
+                    <Button
+                        android:id="@+id/sendButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:onClick="sendText"
+                        android:shadowColor="@color/teal_200"
+                        android:text="Send" />
+                </TableRow>
+            </TableLayout>
+
+            <!--        <ImageButton-->
+            <!--            android:id="@+id/send1"-->
+            <!--            android:layout_width="80dp"-->
+            <!--            android:layout_height="50dp"-->
+            <!--            android:adjustViewBounds="true"-->
+            <!--            android:background="#F3C6B8"-->
+            <!--            android:onClick="sendImage"-->
+            <!--            android:scaleType="fitCenter"-->
+            <!--            android:src="@drawable/dog" />-->
+
+            <!--        <ImageButton-->
+            <!--            android:id="@+id/send2"-->
+            <!--            android:layout_width="80dp"-->
+            <!--            android:layout_height="50dp"-->
+            <!--            android:adjustViewBounds="true"-->
+            <!--            android:background="#F3C6B8"-->
+            <!--            android:onClick="sendImage"-->
+            <!--            android:scaleType="fitCenter"-->
+            <!--            android:src="@drawable/cat" />-->
+
+            <!--        <ImageButton-->
+            <!--            android:id="@+id/send3"-->
+            <!--            android:layout_width="80dp"-->
+            <!--            android:layout_height="50dp"-->
+            <!--            android:adjustViewBounds="true"-->
+            <!--            android:background="#F3C6B8"-->
+            <!--            android:onClick="sendImage"-->
+            <!--            android:scaleType="fitCenter"-->
+            <!--            android:src="@drawable/pig" />-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

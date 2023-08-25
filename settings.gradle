@@ -1,0 +1,4 @@
+
+
+rootProject.name = "NUMAD23SP_ZihaoLuo_ShiZhong_ZhenLiu_Project"
+include ':app'

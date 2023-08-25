@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Int.</string>
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_subscribe_failed">Subscription Failed</string>
+    <string name="channel_id">Channel_Name_NUMAD_demo</string>
+    <string name="channel_name">Notifcation Name</string>s
+    <string name="channel_description">Notification Channel for the demo app</string>
+</resources>

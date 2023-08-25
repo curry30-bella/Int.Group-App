@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "105247205555",
+    "firebase_url": "https://wk08-965ee-default-rtdb.firebaseio.com",
+    "project_id": "wk08-965ee",
+    "storage_bucket": "wk08-965ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105247205555:android:ad61bc024fec5ee6c4a8c6",
+        "android_client_info": {
+          "package_name": "edu.northeastern.numad23sp_zihaoluo_shizhong_zhenliu_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105247205555-813nihv5uvvg9iumsj8p1rmvknh6brdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx2EK-CqP6K9tM3gON1qboCakquGypUkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105247205555-813nihv5uvvg9iumsj8p1rmvknh6brdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

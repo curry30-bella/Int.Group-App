@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "855787105355",
+    "firebase_url": "https://numad23-ab1e4-default-rtdb.firebaseio.com",
+    "project_id": "numad23-ab1e4",
+    "storage_bucket": "numad23-ab1e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        <<<<<<<
+        HEAD
+        "mobilesdk_app_id": "1:855787105355:android:5d9160a169938d092b31ce",
+        =======
+        "mobilesdk_app_id": "1:855787105355:android:265accdd8868af062b31ce",
+        >>>>>>>
+        exp
+        "android_client_info": {
+          "package_name": "edu.northeastern.numad23sp_zihaoluo_shizhong_zhenliu_project.realtimedatabase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "855787105355-0l7ufv4bg4a1rr5o0orenjd58a0i22at.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFzQ3mCJdEaRTNFk5I0yh6AEs4X8YZock"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "855787105355-0l7ufv4bg4a1rr5o0orenjd58a0i22at.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
